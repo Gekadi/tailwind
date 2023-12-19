@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portofolio tailwind css</title>
     <link href="/dist/output.css" rel="stylesheet" />
+    <!-- aos css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
 </head>
 <body>
 
@@ -73,10 +75,10 @@
                 </div>
                 <div class="w-full self-end px-4 lg:w-1/2">
                     <div class="relative mt-10 lg:mt-9 lg:right-0">
-                        <img src="/dist/img/gekadi-foto-removebg-preview (1).png" alt="gekadi"
+                        <img  data-aos="fade-right" src="/dist/img/gekadi-foto-removebg-preview (1).png" alt="gekadi"
                         class="max-w-full mx-auto" />
                         <span class="absolute bottom-0 -z-10 left-1/2 -translate-x-1/2 md:scale-125">
-                            <svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <svg  data-aos="fade-right"width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                                 <path fill="#14b8a6" d="M27.9,-28.9C36.2,-19.7,42.8,-9.9,48.8,6C54.8,21.8,60.2,43.7,51.9,58.8C43.7,73.8,21.8,82.2,1.1,81.1C-19.7,80.1,-39.4,69.6,-47.4,54.5C-55.4,39.4,-51.7,19.7,-47.8,3.9C-43.9,-11.9,-39.7,-23.8,-31.8,-32.9C-23.8,-42.1,-11.9,-48.6,-1,-47.6C9.9,-46.6,19.7,-38.1,27.9,-28.9Z"
                                 transform="translate(100 100) scale(1.1)" />
                             </svg>
@@ -103,7 +105,7 @@
                 <h3 class="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-10">Follow Me🙌</h3> 
                 <p class="font-medium text-base text-seconddary mb-6 lg:text-lg">Come be friends with me on my Sosial Media!🙌
                 </p>
-                <div class="flex items-center">
+                <div  data-aos="fade-right" class="flex items-center">
                     <!-- youtube -->
                     <a href="https://www.youtube.com/@gustiayumadeadiastuti530" 
                     target="_blank" class="w-9 h-9 mr-9 rounded-full flex justify-center items-center border border-slate-300 text-slate-300
@@ -164,7 +166,7 @@
             <div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
                 <div class="mb-12 p-4 md:w-1/2">
                     <div class="rounded-md shadow-md overflow-hidden">
-                        <img src="dist/portfolio/portfolio-1.png" alt="portfolio pertama w-full">
+                        <img data-aos="flip-left" src="dist/portfolio/portfolio-1.png" alt="portfolio pertama w-full">
                     </div>
                     <div>
                         <h3 class="font-semibold text-xl text-dark mt-5 mb-3">My First Project</h3>
@@ -175,7 +177,7 @@
                 </div>
                 <div class="mb-12 p-4 md:w-1/2">
                     <div class="rounded-md shadow-md overflow-hidden">
-                        <img src="dist/portfolio/portfolio-2.png" alt="portfolio Kedua w-full">
+                        <img data-aos="flip-left" src="dist/portfolio/portfolio-2.png" alt="portfolio Kedua w-full">
                     </div>
                     <div>
                         <h3 class="font-semibold text-xl text-dark mt-5 mb-3">My Second Project</h3>
@@ -197,7 +199,7 @@
                             </div>
                         </div>
                         <!-- html -->
-                        <div class="flex items-center justify-center">
+                        <div data-aos="fade-up-left" class="flex items-center justify-center">
                             <a href="#" target="_blank" class="w-9 h-9 mr-10 rounded-full flex justify-center items-center border border-slate-300 text-slate-300
                             hover:border-primary hover:bg-primary hover:text-white">
                             <svg role="img" width="100" height="50" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>HTML5</title><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"/></svg>
@@ -301,7 +303,7 @@
                                     </ul>
                                 </div>
 
-                                <div class="w-full pt-10 border-t border-slate-700">
+                                <div  data-aos="flip-left" class="w-full pt-10 border-t border-slate-700">
                                     <div class="flex items-center justify-center mb-5">
                                         <!-- youtube -->
                                         <a href="https://www.youtube.com/@gustiayumadeadiastuti530" 
@@ -341,13 +343,18 @@
                                         </a>
                                     </div>
                                 </div>
-                                <p class="font-medium text-sm text-slate-500 text-center  w-full">This website was created by Gekadi using Tailwind CSS</p>
+                                <p class="font-medium text-xs text-slate-500 text-center  w-full">This website was created <span class="text-pink-500">❤️</span> by <a href="https://www.linkedin.com/in/gekadi2204" target="_blank" class="font-bold text-primary"> Gekadi</a> <a href="https://tailwindcss.com" target="_blank" class="text-sky-500">using Tailwind CSS</a></p>
                             </div>
                         </div>
                     </footer>
                 <!-- footer end -->
                 
                 <script src="/dist/js/script.js"></script>
+                <!-- aos js -->
+                <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+                <script>
+                    AOS.init();
+                </script>
                 
             </body>
             </html>
